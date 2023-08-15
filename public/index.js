@@ -6,7 +6,7 @@ import {fileURLToPath} from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const port = 300;
+// const port = 300;
 const app = express();
 
 app.use(express.static('public'));
@@ -37,8 +37,8 @@ app.get("/pre-projects",(req, res)=>{
     res.render(__dirname+"/public/pre-projects.ejs");
 })
 
-app.listen(port, ()=>{
-    console.log(`The Server is running in ${port}`);
+app.listen(3000, ()=>{
+    console.log(`The Server is running in 3000`);
 });
 
 
